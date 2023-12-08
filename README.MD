@@ -33,7 +33,7 @@ Follow these steps to use the project:
    ```bash
    pip install -r requirements.txt
    ```
-4. Download the model [Here](https://drive.google.com/drive/folders/1dIfktYxRH76ktCSWUakhoAb07rppCGgw?usp=sharing), and copy into `model/`.
+4. Download the model [here](https://drive.google.com/drive/folders/1dIfktYxRH76ktCSWUakhoAb07rppCGgw?usp=sharing), and copy into `model/`.
 5. Run the Flask application:
    ```bash
    flask run
@@ -41,7 +41,7 @@ Follow these steps to use the project:
 
 ## Project Structure
 
-- `model/`: Contains model used with `.h5` format (folder empty because the size is too large. You can download the model [Here](https://drive.google.com/drive/folders/1dIfktYxRH76ktCSWUakhoAb07rppCGgw?usp=sharing)).
+- `model/`: Contains model used with `.h5` format (folder empty because the size is too large. You can download the model [here](https://drive.google.com/drive/folders/1dIfktYxRH76ktCSWUakhoAb07rppCGgw?usp=sharing)).
 - `app.py`: Flask application for serving the model and routing.
 - `templates/`: Contains HTML templates for the web interface.
 - `static/`: Directory for static files (CSS, images, etc.).
