@@ -1,6 +1,3 @@
-Sure, here's an example of how you can create a README.md file for your GitHub repository that provides information about your machine learning (image classification) project using the VGG16 model, along with the datasets and dependencies required.
-
-```markdown
 # Image Classification using VGG16
 
 This repository contains a machine learning project for image classification utilizing the VGG16 model.
