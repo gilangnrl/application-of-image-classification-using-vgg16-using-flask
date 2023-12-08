@@ -1,5 +1,6 @@
 # Image Classification using VGG16
 ![Example](/static/example.jpg)
+![Example2](/static/example2.jpg)
 This repository contains a machine learning project for image classification utilizing the VGG16 model.
 
 ## Dataset
