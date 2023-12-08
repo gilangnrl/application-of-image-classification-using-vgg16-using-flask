@@ -33,7 +33,7 @@ Follow these steps to use the project:
    ```
 2. Navigate to the project directory:
    ```bash
-   cd your-repo
+   cd application-of-image-classification-using-vgg16-using-flask
    ```
 3. Install the required dependencies:
    ```bash
