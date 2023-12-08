@@ -33,7 +33,21 @@ Follow these steps to use the project:
    ```bash
    pip install -r requirements.txt
    ```
-4. Run the Flask application:
+4. Put your model inside `model/`
+5. Edit your model selection in `app.py`
+    ```python
+    model_dict = {
+        "<your_model_name>": "./model/<your_model_name>.h5",
+    }  # Path to the pre-trained model file
+    ```
+    Also edit your `class_list`
+    ```python
+    class_list = {
+      '<your_model_name>'       : { 'class_1': 0, 'class_2': 1,'class_3': 2 },
+    }
+    ```
+
+5. Run the Flask application:
    ```bash
    flask run
    ```
