@@ -29,7 +29,7 @@ pip install -r requirements.txt
 Follow these steps to use the project:
 1. Clone this repository:
    ```bash
-   git clone https://github.com/your-username/your-repo.git
+   git clone https://github.com/gilangnrl/application-of-image-classification-using-vgg16-using-flask
    ```
 2. Navigate to the project directory:
    ```bash
