@@ -18,12 +18,6 @@ To run this project, make sure you have the following dependencies installed:
 - livereload
 - pillow
 
-You can install these dependencies using the following command:
-
-```bash
-pip install -r requirements.txt
-```
-
 ## Usage
 
 Follow these steps to use the project:
@@ -54,5 +48,3 @@ Follow these steps to use the project:
 
 Feel free to explore and modify the code as needed!
 ```
-
-Replace `"your-username"` and `"your-repo"` with your GitHub username and the repository name, respectively. Customize the description and details as necessary for your project. This README.md provides an overview of the project, its usage instructions, dependencies, and a brief project structure explanation.
