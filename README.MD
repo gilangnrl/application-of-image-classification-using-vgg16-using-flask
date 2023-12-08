@@ -8,16 +8,6 @@ The project uses two datasets:
 - Rock Paper Scissors, and
 - Corel 10k
 
-## Dependencies
-
-To run this project, make sure you have the following dependencies installed:
-- opencv-python
-- numpy
-- flask
-- tensorflow
-- livereload
-- pillow
-
 ## Usage
 
 Follow these steps to use the project:
