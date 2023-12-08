@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Error Message</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif; /* Use Poppins font for a modern look */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #242424; /* Dark background color */
+            color: #FF6B6B; /* Vibrant text color */
+        }
+
+        .wave-text {
+            font-size: 5em; /* Set the font size */
+            position: relative;
+            animation: wave 1.5s ease-in-out infinite;
+        }
+
+        @keyframes wave {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-15%);
+            }
+        }
+    </style>
+</head>
+<body>
+    <p class="wave-text">Invalid file format or file not found.</p>
+</body>
+</html>

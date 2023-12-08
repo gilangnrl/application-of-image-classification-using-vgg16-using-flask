@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/style.css">
+    <title>Image Prediction</title>
+</head>
+<body>
+    <section class="contact-section" id="predict1">
+        <div class="container">
+            <div class="title-box centred">
+                <div class="sec-title">Image Classification</div>
+            </div>
+            <form class="login100-form validate-form" action="/predict" method="post" enctype="multipart/form-data">
+                <div>
+                    <select class="styled-select" name="model_name">
+                        <option value="rps" selected>Rock Paper Scissors Classification</option>
+                        <option value="corel_10k">Corel 10K Classification</option>
+                    </select>
+                </div>
+                <img id="image-preview" alt="Image preview" src="/static/blank.png" />
+                <div class="container-login100-form-btn">
+                    <div class="wrap-input100 validate-input" data-validate="Image file is required" id="input">
+                        <input class="input100" id="image-source" name="file" onchange="previewImage();" type="file"
+                               alt="Input Image" accept="image/jpeg,image/jpg,image/png">
+                    </div>
+                </div>
+                <div class="container-login100-form-btn">
+                    <button class="login100-form-btn" type="submit">Execute</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <script>
+        function previewImage() {
+            var preview = document.getElementById('image-preview');
+            var file = document.getElementById('image-source').files[0];
+            var reader = new FileReader();
+
+            reader.onloadend = function () {
+                preview.src = reader.result;
+            }
+
+            if (file) {
+                reader.readAsDataURL(file);
+            } else {
+                preview.src = "";
+            }
+        }
+        
+        document.addEventListener('DOMContentLoaded', function () {
+            document.getElementById('execute-btn').addEventListener('click', function () {
+                var form_data = new FormData(document.getElementById('prediction-form'));
+                var xhr = new XMLHttpRequest();
+        
+                xhr.open('POST', '/predict', true);
+        
+                xhr.onload = function () {
+                    if (xhr.status === 200) {
+                        var response = JSON.parse(xhr.responseText);
+                        // Update the HTML with prediction results
+                        // For example, update a <div> with id="result" with the response
+                        document.getElementById('result').innerHTML = response;
+                    } else {
+                        // Handle error
+                    }
+                };
+        
+                xhr.send(form_data);
+            });
+        });
+    </script>
+</body>
+</html>
+
