@@ -48,4 +48,3 @@ Follow these steps to use the project:
 - `requirements.txt`: File containing all required Python packages and versions.
 
 Feel free to explore and modify the code as needed!
-```
