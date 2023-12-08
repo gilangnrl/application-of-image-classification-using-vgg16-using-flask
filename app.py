@@ -3,7 +3,7 @@ import time
 import cv2
 import numpy as np
 from flask import Flask, request, render_template
-from tensorflow.keras.models import load_model
+from keras.models import load_model
 from livereload import Server  # For live reloading during development
 from PIL import Image
 
@@ -14,8 +14,8 @@ app = Flask(__name__)
 UPLOAD_FOLDER = 'static/uploads/'
 app.config['MAX_CONTENT_LENGTH'] = 10 * 1024 * 1024  # Maximum upload size allowed
 model_dict = {
-            "rps": "./model/model_vgg.h5",
-            "corel_10k": "./model/vgg_rgb_corel_10k.hdf5"
+            "rps": "./model/model_rps.h5",
+            "corel_10k": "./model/model_corel_10k.h5"
         }  # Path to the pre-trained model file
 
 class_list = {

@@ -1,8 +1,5 @@
-# Ignore all files inside the model folder
-/model/*
-# Except the folder itself
-!/model/
-
-
+# Ignore files inside the model folder
+model/*
+!model/.gitkeep 
 # Ignore the __pycache__ folder
 __pycache__/
