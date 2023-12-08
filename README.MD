@@ -5,7 +5,7 @@ This repository contains a machine learning project for image classification uti
 ## Dataset
 
 The project uses two datasets:
-- Rock Paper Scissors
+- Rock Paper Scissors, and
 - Corel 10k
 
 ## Dependencies
@@ -33,20 +33,7 @@ Follow these steps to use the project:
    ```bash
    pip install -r requirements.txt
    ```
-4. Put your model inside `model/`
-5. Edit your model selection in `app.py`
-    ```python
-    model_dict = {
-        "<your_model_name>": "./model/<your_model_name>.h5",
-    }  # Path to the pre-trained model file
-    ```
-    Also edit your `class_list`
-    ```python
-    class_list = {
-      '<your_model_name>'       : { 'class_1': 0, 'class_2': 1,'class_3': 2 },
-    }
-    ```
-
+4. Download the model [Here](https://drive.google.com/drive/folders/1dIfktYxRH76ktCSWUakhoAb07rppCGgw?usp=sharing), and copy into `model/`.
 5. Run the Flask application:
    ```bash
    flask run
@@ -54,7 +41,7 @@ Follow these steps to use the project:
 
 ## Project Structure
 
-- `model/`: Contains model used with `.h5`,`hdf5` format (folder empty because the size is to large).
+- `model/`: Contains model used with `.h5` format (folder empty because the size is to large. You can download the model [Here](https://drive.google.com/drive/folders/1dIfktYxRH76ktCSWUakhoAb07rppCGgw?usp=sharing)).
 - `app.py`: Flask application for serving the model and routing.
 - `templates/`: Contains HTML templates for the web interface.
 - `static/`: Directory for static files (CSS, images, etc.).

@@ -1,1 +1,1 @@
-put your model in this folder
+put the model in this folder
