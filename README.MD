@@ -41,7 +41,7 @@ Follow these steps to use the project:
 
 ## Project Structure
 
-- `model/`: Contains model used with `.h5` format (folder empty because the size is to large. You can download the model [Here](https://drive.google.com/drive/folders/1dIfktYxRH76ktCSWUakhoAb07rppCGgw?usp=sharing)).
+- `model/`: Contains model used with `.h5` format (folder empty because the size is too large. You can download the model [Here](https://drive.google.com/drive/folders/1dIfktYxRH76ktCSWUakhoAb07rppCGgw?usp=sharing)).
 - `app.py`: Flask application for serving the model and routing.
 - `templates/`: Contains HTML templates for the web interface.
 - `static/`: Directory for static files (CSS, images, etc.).
