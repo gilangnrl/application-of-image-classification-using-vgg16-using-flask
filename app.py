@@ -4,7 +4,6 @@ import cv2
 import numpy as np
 from flask import Flask, request, render_template
 from keras.models import load_model
-from livereload import Server  # For live reloading during development
 from PIL import Image
 
 # Allowed file extensions for image uploads
@@ -182,6 +181,4 @@ def predict():
 
 # Run the server with live reload functionality during development
 if __name__ == "__main__":
-    server = Server(app.wsgi_app)
-    server.watch("templates/*.*")  # Watch for changes in template files
-    server.serve()
+    app.run(debug=True)

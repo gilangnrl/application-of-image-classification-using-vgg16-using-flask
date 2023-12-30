@@ -1,0 +1,23 @@
+{
+  "name": "modul-6",
+  "version": "1.0.0",
+  "description": "![Example](/static/example.jpg)\r ![Example2](/static/example2.jpg)\r This repository contains a machine learning project for image classification utilizing the VGG16 model.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "create-css": "npx tailwindcss -i ./static/src/input.css -o ./static/css/main.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gilangnrl/application-of-image-classification-using-vgg16-using-flask.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gilangnrl/application-of-image-classification-using-vgg16-using-flask/issues"
+  },
+  "homepage": "https://github.com/gilangnrl/application-of-image-classification-using-vgg16-using-flask#readme",
+  "dependencies": {
+    "tailwindcss": "^3.4.0"
+  }
+}
