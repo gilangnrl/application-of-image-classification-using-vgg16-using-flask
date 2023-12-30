@@ -3,3 +3,4 @@ model/*
 !model/readme.txt 
 # Ignore the __pycache__ folder
 __pycache__/
+node_modules
